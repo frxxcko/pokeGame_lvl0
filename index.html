@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./pokeGame.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--Jquery a continuacion-->
+    <script></script>
+
+    <title>PokeGame By Juan I. Basualdo</title>
+  </head>
+  <body>
+    <div class="desktop">
+      <h2>¡Por el momento sólo podrás jugar correctamente en mobile!</h2>
+    </div>
+    <div id="body">
+      <div class="contenedor">
+        <img src="./imagenes/backgroundBattle0.jpg" alt="battle background" />
+        <img src="./imagenes/PokeLogo.png" id="pokeLogo" />
+
+        <input type="button" id="start" value="Start" />
+        <div class="cielo"></div>
+      </div>
+      <p class="chat" id="chat">
+        Hola, soy Charmander! Sere tu primer acompañante
+      </p>
+
+      <input type="button" id="siguiente" value="Siguiente" />
+      <input type="button" id="pelea" value="Pelea" class="pelea" />
+      <input
+        type="button"
+        id="evolucionar"
+        value="Evoluciona"
+        class="evolucionar"
+      />
+      <input
+        type="button"
+        id="evolucionar2"
+        value="Ultra evolucion"
+        class="evolucionar"
+      />
+      <input
+        type="button"
+        id="f5"
+        value="Intentalo de nuevo"
+        class="intentalo"
+      />
+
+      <!--arriba inputs-->
+      <div class="p1"><img src="./imagenes/p1.gif" id="p1" /></div>
+      <div class="p2"><img src="./imagenes/p2.gif" id="p2" /></div>
+      <div class="contenedorInput">
+        <input type="button" value="Ataque básico" id="basico" />
+        <input type="button" value="Ataque básico II" id="basico1" />
+        <input type="button" value="Ataque básico III" id="basico2" />
+        <input type="button" value="Ataque sorpresa" id="recargado" />
+        <input type="button" value="Ataque Ultra" id="ultra" />
+      </div>
+    </div>
+    <audio
+      src="./PokeGameTheme.mp3"
+      controls
+      preload="auto"
+      loop
+      autoplay
+      id="mp3"
+    ></audio>
+    <script type="text/javascript" src="./pokeGame.js"></script>
+  </body>
+</html>

@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  background-color: #86d053;
+}
+
+audio {
+  visibility: hidden;
+}
+.contenedor {
+  height: 85vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  background-color: #86d053;
+}
+
+audio {
+  outline: none;
+  height: 2rem;
+  position: absolute;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  bottom: 2rem;
+}
+
+.cielo {
+  background-color: #74e7fc;
+  width: 100%;
+  height: 20%;
+  position: absolute;
+}
+
+.contenedor img {
+  height: 60%;
+  position: absolute;
+  top: 20%;
+}
+
+footer {
+  color: blanchedalmond;
+  text-align: center;
+}
+
+.sangrePokemon {
+  color: rgb(230, 0, 0);
+}
+
+#ultra {
+  background-color: rgb(75, 0, 59);
+  color: #fff;
+  font-weight: bold;
+}
+
+.desktop {
+  height: 100vh;
+}
+
+.desktop h2 {
+  font-size: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1080px) {
+  html {
+    height: 100vh;
+  }
+
+  body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .contenedor img {
+    width: 100%;
+    height: auto;
+  }
+
+  .contenedorInput {
+    position: relative;
+    bottom: 15rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+  input {
+    width: 35%;
+    margin: auto;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+  }
+
+  .p1 img {
+    height: 6rem;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+  }
+  .p2 img {
+    height: 11rem;
+    position: absolute;
+    top: 45%;
+    right: 8%;
+  }
+  #pokeLogo {
+    width: 80%;
+  }
+  #start,
+  .intentalo {
+    position: absolute;
+    background-color: rgb(186, 236, 120);
+    color: #000;
+    font-weight: bold;
+    top: 45%;
+    width: auto;
+  }
+  p {
+    background-color: rgb(235, 235, 235);
+    color: #b92424;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 1rem;
+    position: absolute;
+    margin: auto;
+    top: 30%;
+    left: 20%;
+    width: 35%;
+    text-align: center;
+    border-radius: 1rem;
+  }
+
+  #siguiente {
+    position: absolute;
+    top: 65%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+  }
+  #f5 {
+    position: absolute;
+    top: 65%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  #pelea {
+    position: absolute;
+    top: 65%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  #evolucionar {
+    position: absolute;
+    top: 75%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(163, 42, 137);
+    color: #fff;
+    font-weight: bold;
+  }
+
+  #evolucionar2 {
+    position: absolute;
+    top: 75%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(75, 0, 59);
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .pelea {
+    background-color: chartreuse;
+    font-weight: bold;
+  }
+
+  .hp1 {
+    position: absolute;
+    width: auto;
+    left: 5%;
+    font-weight: bold;
+    font-size: 2rem;
+    display: none;
+  }
+  .hp2 {
+    position: absolute;
+    width: auto;
+    left: 61%;
+    font-weight: bold;
+    font-size: 2rem;
+    display: none;
+  }
+  .lifePoints1 {
+    position: absolute;
+    width: 20%;
+    text-align: center;
+    left: 10%;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-left: 1rem;
+    padding-inline-start: 2rem;
+    top: 30.5%;
+    border: none;
+  }
+  .lifePoints2 {
+    position: absolute;
+    width: 20%;
+    text-align: center;
+    right: 10%;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-left: 1rem;
+    padding-inline-start: 2rem;
+    top: 30.5%;
+    border: none;
+  }
+}
